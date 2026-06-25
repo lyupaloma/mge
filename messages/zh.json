@@ -211,6 +211,34 @@
       "error": "出现问题，请致电联系我们。"
     }
   },
+  "media": {
+    "heading": "我们的专家在媒体上",
+    "subheading": "观看MGE DNA专家的采访和报道"
+  },
+  "instruction": {
+    "heading": "如何采集DNA样本",
+    "subheading": "简单的生物材料采集指南 — 5个步骤",
+    "downloadCta": "下载DNA采集指南",
+    "steps": [
+      { "title": "预约", "description": "致电或发送消息——我们将协商方便的时间和方式（实验室或上门服务）。" },
+      { "title": "领取采集包", "description": "我们将提供无菌棉签和说明。上门服务时，专家将携带所需一切。" },
+      { "title": "采集口腔样本", "description": "用棉签在口腔内侧轻刷10-15次。采集前1小时请勿进食。" },
+      { "title": "包装样本", "description": "让棉签晾干5-10分钟，放入套装中的信封或袋子。写上参与者姓名。" },
+      { "title": "送至实验室", "description": "亲自送来、快递或在上门服务时交给专家。结果最快1天。" }
+    ]
+  },
+  "geography": {
+    "heading": "MGE DNA实验室遍布哈萨克斯坦各地区",
+    "subheading": "我们的采样点位于全国所有主要城市",
+    "description": "无需前往首都——只需联系我们，我们将告知您所在城市最近的实验室地址。我们服务范围覆盖整个哈萨克斯坦：从阿特劳到乌斯季卡缅诺戈尔斯克。",
+    "cta": "在我所在城市查找实验室",
+    "statCities": "个城市",
+    "statYears": "年经验",
+    "statSupport": "全天咨询",
+    "statResult": "加急结果",
+    "legendMain": "总实验室（阿拉木图）",
+    "legendCity": "采样点"
+  },
   "footer": {
     "rights": "© 2026 MGE DNA. 保留所有权利。",
     "license": "持牌实验室",
