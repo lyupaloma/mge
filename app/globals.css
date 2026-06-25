@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: "Inter", system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-inter);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #070D1A;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1A2E4A;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C8A96E;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #C8A96E 0%, #DFC28A 50%, #C8A96E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-gold {
+    box-shadow: 0 0 40px rgba(200, 169, 110, 0.15);
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
+  }
+
+  .border-gradient {
+    border: 1px solid transparent;
+    background: linear-gradient(#0F1E35, #0F1E35) padding-box,
+                linear-gradient(135deg, rgba(200,169,110,0.3), rgba(59,130,246,0.2)) border-box;
+  }
+
+  /* DNA grid pattern overlay */
+  .dna-grid {
+    background-image:
+      linear-gradient(rgba(200,169,110,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(200,169,110,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+}
+
+/* ── 3D DNA double-helix (pure CSS, no three.js) ───────────────── */
+.dna-helix {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 64px;
+  height: 168px;
+  perspective: 900px;
+  flex-shrink: 0;
+}
+
+.dna-rung {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6px;
+  transform-style: preserve-3d;
+  animation: dnaSpin 4s linear infinite;
+}
+
+.dna-node {
+  width: 9px;
+  height: 9px;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+.dna-node--gold { background: #C8A96E; box-shadow: 0 0 8px rgba(200,169,110,0.6); }
+.dna-node--blue { background: #3B82F6; box-shadow: 0 0 8px rgba(59,130,246,0.5); }
+
+.dna-bar {
+  flex: 1;
+  height: 2px;
+  margin: 0 2px;
+  background: linear-gradient(90deg, rgba(200,169,110,0.7), rgba(59,130,246,0.5));
+}
+
+@keyframes dnaSpin {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dna-rung { animation: none; }
+}

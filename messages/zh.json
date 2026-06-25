@@ -1,0 +1,219 @@
+{
+  "meta": {
+    "title": "MGE DNA — 阿拉木图基因实验室。1天出结果",
+    "description": "阿拉木图DNA亲子鉴定：亲缘关系确认、司法鉴定。最快1天出结果。提供上门服务。持牌实验室。",
+    "keywords": "DNA检测阿拉木图, 亲子鉴定, 基因鉴定哈萨克斯坦"
+  },
+  "nav": {
+    "services": "服务",
+    "howItWorks": "如何运作",
+    "prices": "价格",
+    "certificates": "证书",
+    "reviews": "评价",
+    "contacts": "联系我们",
+    "bookCta": "预约"
+  },
+  "hero": {
+    "badge": "持牌实验室 · 阿拉木图",
+    "title": "基因实验室",
+    "titleAccent": "结果 — 1天内",
+    "subtitle": "DNA亲缘关系鉴定：亲子鉴定、司法鉴定。清晰、保密、提供上门服务。",
+    "ctaPrimary": "预约检测",
+    "ctaSecondary": "了解费用",
+    "chips": [
+      { "icon": "shield", "label": "哈萨克斯坦卫生部许可" },
+      { "icon": "car",    "label": "上门服务" },
+      { "icon": "clock",  "label": "1天出结果" }
+    ]
+  },
+  "stats": [
+    { "value": "99.9999%", "label": "检测准确率" },
+    { "value": "2014年",   "label": "以来" },
+    { "value": "上门",     "label": "阿拉木图全市" },
+    { "value": "最快1天",  "label": "出结果" }
+  ],
+  "services": {
+    "heading": "我们的服务",
+    "subheading": "各种复杂度的基因检测",
+    "items": [
+      {
+        "icon": "dna",
+        "title": "亲子鉴定",
+        "description": "用于个人的信息分析。准确率99.9999%。最快1天出结果。",
+        "price": "起90,000₸",
+        "badge": "最受欢迎"
+      },
+      {
+        "icon": "gavel",
+        "title": "司法鉴定",
+        "description": "哈萨克斯坦法院采信的官方鉴定结论，符合所有民事诉讼法要求。",
+        "price": "起90,000₸",
+        "badge": null
+      },
+      {
+        "icon": "car",
+        "title": "上门服务",
+        "description": "专家上门采样——家庭、办公室或任何方便的地点。覆盖全阿拉木图。",
+        "price": "请询价",
+        "badge": "独家"
+      },
+      {
+        "icon": "mars",
+        "title": "父系亲缘（Y-DNA）",
+        "description": "通过Y染色体确认父系亲缘：祖父、儿子、兄弟、叔伯。",
+        "price": "请询价",
+        "badge": null
+      },
+      {
+        "icon": "venus",
+        "title": "X-DNA亲缘",
+        "description": "通过祖母或母系确认亲缘关系。",
+        "price": "请询价",
+        "badge": null
+      },
+      {
+        "icon": "people",
+        "title": "同父异母姐妹",
+        "description": "通过X染色体验证姐妹之间的亲缘关系。",
+        "price": "请询价",
+        "badge": null
+      }
+    ]
+  },
+  "howItWorks": {
+    "heading": "检测流程",
+    "subheading": "从预约到结果，4个简单步骤",
+    "steps": [
+      {
+        "number": "01",
+        "title": "预约",
+        "description": "致电、发送WhatsApp消息或填写网站表单。我们将在15分钟内回复。"
+      },
+      {
+        "number": "02",
+        "title": "采集样本",
+        "description": "前往我们的实验室，或预约专家上门服务——家庭、办公室或任何方便的地点。"
+      },
+      {
+        "number": "03",
+        "title": "实验室分析",
+        "description": "样本在认证设备上进行分子遗传学检测。"
+      },
+      {
+        "number": "04",
+        "title": "获取结果",
+        "description": "您将收到官方专家结论。标准5天，快速3天，加急1天。"
+      }
+    ]
+  },
+  "why": {
+    "heading": "为什么选择MGE DNA",
+    "items": [
+      { "icon": "shield",  "title": "持牌实验室",         "text": "哈萨克斯坦卫生部许可，ESWG、俄罗斯联邦RCSME（莫斯科）国际组织认证。" },
+      { "icon": "clock",   "title": "1天出结果",          "text": "加急检测——阿拉木图大多数实验室没有的独家服务。" },
+      { "icon": "car",     "title": "上门服务",            "text": "专家上门采样，无需出行。" },
+      { "icon": "lock",    "title": "完全保密",            "text": "您的数据受到保护，结果仅您本人可获取。" },
+      { "icon": "users",   "title": "经验丰富的专家",     "text": "具有国际认证资质的专业人员。" },
+      { "icon": "check",   "title": "准确率99.9999%",     "text": "采用国际司法实践标准进行DNA分析。" }
+    ]
+  },
+  "pricing": {
+    "heading": "透明价格",
+    "subheading": "所有套餐均包含官方专家结论",
+    "columns": ["标准", "快速", "加急"],
+    "rows": [
+      {
+        "label": "2份样本（父亲+子女）",
+        "values": [
+          { "price": "90,000₸",  "time": "5个工作日" },
+          { "price": "110,000₸", "time": "3个工作日" },
+          { "price": "190,000₸", "time": "1个工作日", "highlight": true }
+        ]
+      },
+      {
+        "label": "额外样本（母亲）",
+        "values": [
+          { "price": "+35,000₸", "time": "" },
+          { "price": "+35,000₸", "time": "" },
+          { "price": "+50,000₸", "time": "", "highlight": true }
+        ]
+      }
+    ],
+    "note": "价格适用于阿拉木图市。其他地区因物流可能有所不同。",
+    "ctaLabel": "预约检测"
+  },
+  "certificates": {
+    "heading": "许可证与证书",
+    "subheading": "国际认证和政府许可"
+  },
+  "reviews": {
+    "heading": "客户评价",
+    "subheading": "基于2GIS评价 4.5 ★",
+    "items": [
+      {
+        "name": "Алия М.",
+        "rating": 5,
+        "text": "对客户非常友好，解释清晰。医生专业且细心。"
+      },
+      {
+        "name": "Серік Б.",
+        "rating": 5,
+        "text": "很好，我很满意，结果准确。按时收到了结果，没有延误。"
+      },
+      {
+        "name": "Дамира Қ.",
+        "rating": 5,
+        "text": "优秀的工作人员，友好的态度。强烈推荐这家实验室。"
+      },
+      {
+        "name": "Жанна Р.",
+        "rating": 5,
+        "text": "非常感谢！非常好的实验室。快速、专业、解释清楚。"
+      }
+    ]
+  },
+  "faq": {
+    "heading": "常见问题",
+    "items": [
+      {
+        "question": "何时能获得结果？",
+        "answer": "信息分析：根据套餐1-5个工作日。司法鉴定：5-10个工作日。"
+      },
+      {
+        "question": "上门服务如何进行？",
+        "answer": "预约后确认时间和地点。专家携带所需设备上门，10-15分钟内完成采样。"
+      },
+      {
+        "question": "检测准确率如何？",
+        "answer": "阳性结果的亲子鉴定准确率为99.9999%。阴性结果则100%排除。"
+      },
+      {
+        "question": "我的信息保密吗？",
+        "answer": "是的。结果仅提供给委托人。我们不向第三方透露个人信息。"
+      }
+    ]
+  },
+  "contacts": {
+    "heading": "联系我们",
+    "subheading": "15分钟内回复",
+    "phone": "+7 775 515 19 00",
+    "email": "info@mgedna.kz",
+    "address": "阿拉木图市",
+    "schedule": "周一至周五，工作时间",
+    "whatsapp": "发送WhatsApp",
+    "instagram": "Instagram",
+    "form": {
+      "name": "您的姓名",
+      "phone": "电话",
+      "message": "留言（可选）",
+      "submit": "提交申请",
+      "success": "感谢！我们将尽快与您联系。",
+      "error": "出现问题，请致电联系我们。"
+    }
+  },
+  "footer": {
+    "rights": "© 2026 MGE DNA. 保留所有权利。",
+    "license": "持牌实验室",
+    "developedBy": "网站开发 —"
+  }
+}
