@@ -110,6 +110,18 @@
   to   { transform: rotateY(360deg); }
 }
 
+/* Пауза анимации ДНК — активируется родителем с классом .dna-paused */
+.dna-paused .dna-rung {
+  animation-play-state: paused;
+}
+/* При наведении на обёртку с .dna-hover — запускается снова */
+.dna-hover .dna-rung {
+  animation-play-state: paused;
+}
+.dna-hover:hover .dna-rung {
+  animation-play-state: running;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .dna-rung { animation: none; }
 }

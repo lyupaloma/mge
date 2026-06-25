@@ -21,9 +21,15 @@
     "ctaPrimary": "Записаться на анализ",
     "ctaSecondary": "Узнать стоимость",
     "chips": [
-      { "icon": "shield", "label": "Лицензия МЗ РК" },
-      { "icon": "car",    "label": "Выезд на дом" },
-      { "icon": "clock",  "label": "Результат за 1 день" }
+      { "icon": "shield",   "label": "Лицензия МЗ РК" },
+      { "icon": "target",   "label": "Точность 99,9999%" },
+      { "icon": "clock",    "label": "Результат за 1 день" },
+      { "icon": "gavel",    "label": "Принимается в суде РК" },
+      { "icon": "lock",     "label": "Конфиденциальность" },
+      { "icon": "car",      "label": "Выезд на дом" },
+      { "icon": "globe",    "label": "Сертификаты ESWG и РЦСМЭ" },
+      { "icon": "pin",      "label": "По всему Казахстану" },
+      { "icon": "calendar", "label": "На рынке с 2016 года" }
     ]
   },
   "stats": [

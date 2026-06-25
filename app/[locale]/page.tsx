@@ -1,7 +1,6 @@
 import ShaderBackground from "@/components/ShaderBackground";
 import { Navbar }        from "@/components/Navbar";
 import { HeroSection }   from "@/components/sections/HeroSection";
-import { StatsBar }      from "@/components/sections/StatsBar";
 import { ServicesSection }    from "@/components/sections/ServicesSection";
 import { HowItWorks }    from "@/components/sections/HowItWorks";
 import { WhySection }    from "@/components/sections/WhySection";
@@ -22,7 +21,6 @@ export default function HomePage() {
       <Navbar />
       <main>
         <HeroSection />
-        <StatsBar />
         <ServicesSection />
         <HowItWorks />
         <WhySection />

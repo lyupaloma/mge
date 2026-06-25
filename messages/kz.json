@@ -21,9 +21,15 @@
     "ctaPrimary": "Талдауға жазылу",
     "ctaSecondary": "Бағасын білу",
     "chips": [
-      { "icon": "shield", "label": "ҚР ДМ Лицензиясы" },
-      { "icon": "car",    "label": "Үйге шығу" },
-      { "icon": "clock",  "label": "1 күнде нәтиже" }
+      { "icon": "shield",   "label": "ҚР ДМ Лицензиясы" },
+      { "icon": "target",   "label": "Дәлдік 99,9999%" },
+      { "icon": "clock",    "label": "1 күнде нәтиже" },
+      { "icon": "gavel",    "label": "ҚР сотта қабылданады" },
+      { "icon": "lock",     "label": "Құпиялылық" },
+      { "icon": "car",      "label": "Үйге шығу" },
+      { "icon": "globe",    "label": "ESWG және РЦСМЭ сертификаттары" },
+      { "icon": "pin",      "label": "Бүкіл Қазақстан бойынша" },
+      { "icon": "calendar", "label": "2016 жылдан бері нарықта" }
     ]
   },
   "stats": [
