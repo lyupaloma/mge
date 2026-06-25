@@ -42,8 +42,9 @@ export function HeroSection() {
       className="relative min-h-screen flex items-center pt-20 overflow-hidden dna-grid"
       aria-label="Hero"
     >
-      {/* Слой-маска: тёмный overlay между шейдером и контентом — выделяет белый текст. */}
-      <div className="absolute inset-0 pointer-events-none bg-[#070D1A]/70" />
+      {/* Слой-маска: диагональное затемнение — плотно слева (под текстом),
+          прозрачнее справа, где видна текстура шейдера. */}
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-bg-deep via-bg-deep/85 to-bg-deep/40" />
       {/* Виньетка снизу — мягкий стык со следующей секцией. */}
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent via-transparent to-bg-deep" />
 
@@ -114,7 +115,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="flex justify-center lg:justify-end"
           >
-            <div className="w-full max-w-md flex items-center gap-8 rounded-3xl border border-white/10 bg-[#070D1A]/60 backdrop-blur-xl p-8 shadow-[0_8px_40px_rgba(0,0,0,0.4)]">
+            <div className="w-full max-w-md flex items-center gap-8 rounded-3xl border border-white/10 bg-[#070D1A]/55 backdrop-blur-[2px] p-8 shadow-[0_8px_40px_rgba(0,0,0,0.4)]">
               <div className="scale-110 origin-center flex-shrink-0">
                 <DnaHelix />
               </div>
