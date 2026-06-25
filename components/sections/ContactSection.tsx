@@ -78,9 +78,9 @@ export function ContactSection() {
               label={t("schedule")}
             />
 
-            <div className="flex gap-3 mt-2">
+            <div className="flex flex-wrap gap-3 mt-2">
               <a
-                href="https://wa.me/77755151900"
+                href="https://wa.me/77755151900?text=Здравствуйте! Пишу с сайта mgedna.kz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-3 rounded-xl border border-bg-border bg-bg-card hover:border-green-500/40 hover:text-green-400 text-text-secondary text-sm font-medium transition-all duration-200"
@@ -97,18 +97,14 @@ export function ContactSection() {
                 <InstagramIcon />
                 {t("instagram")}
               </a>
-            </div>
-
-            {/* 2GIS map embed placeholder */}
-            <div className="rounded-2xl overflow-hidden border border-bg-border bg-bg-card h-52 flex items-center justify-center">
               <a
                 href="https://2gis.kz/almaty/firm/70000001111736257"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center gap-2 text-text-secondary hover:text-gold transition-colors duration-200"
+                className="flex items-center gap-2 px-5 py-3 rounded-xl border border-bg-border bg-bg-card hover:border-gold/40 hover:text-gold text-text-secondary text-sm font-medium transition-all duration-200"
               >
                 <PinIcon />
-                <span className="text-sm">Открыть на 2GIS</span>
+                {t("2gis")}
               </a>
             </div>
           </motion.div>

@@ -124,29 +124,38 @@
     ]
   },
   "pricing": {
-    "heading": "透明价格",
-    "subheading": "所有套餐均包含官方专家结论",
-    "columns": ["标准", "快速", "加急"],
-    "rows": [
+    "heading": "选择出结果的速度",
+    "subheading": "所有套餐均包含官方专家结论及99.9999%准确率",
+    "comparison": "我们1天出结果，而竞争对手需要等待5-30天将样本运送到其他城市。",
+    "popularBadge": "热门",
+    "ctaLabel": "咨询准确价格",
+    "tiers": [
       {
-        "label": "2份样本（父亲+子女）",
-        "values": [
-          { "price": "90,000₸",  "time": "5个工作日" },
-          { "price": "110,000₸", "time": "3个工作日" },
-          { "price": "190,000₸", "time": "1个工作日", "highlight": true }
-        ]
+        "name": "标准",
+        "duration": "5天",
+        "description": "时间不紧时的最佳选择。在我们实验室进行完整的分子遗传学检测。"
       },
       {
-        "label": "额外样本（母亲）",
-        "values": [
-          { "price": "+35,000₸", "time": "" },
-          { "price": "+35,000₸", "time": "" },
-          { "price": "+50,000₸", "time": "", "highlight": true }
-        ]
+        "name": "快速",
+        "duration": "3天",
+        "description": "为需要尽早拿到结论的人提供加速处理——无需支付加急费用。"
+      },
+      {
+        "name": "加急",
+        "duration": "1天",
+        "description": "明天即可出结果。得益于自有实验室——我们不依赖运送到其他城市。",
+        "popular": true
       }
     ],
-    "note": "价格适用于阿拉木图市。其他地区因物流可能有所不同。",
-    "ctaLabel": "预约检测"
+    "whyUs": {
+      "heading": "为什么我们更快",
+      "items": [
+        { "icon": "building", "title": "自有实验室", "text": "检测在我们这里完成，不外包。因此结果1天即可。" },
+        { "icon": "bolt",     "title": "无中间环节", "text": "无需等待5-30天将样本运送到阿斯塔纳或国外。一切就在阿拉木图。" },
+        { "icon": "check",    "title": "准确性保证", "text": "阳性结果准确率99.9999%。采用国际司法实践标准。" }
+      ]
+    },
+    "note": "准确价格我们将单独计算——取决于参与人数和检测类型。请留言或致电，我们将在15分钟内回复。"
   },
   "certificates": {
     "heading": "许可证与证书",
@@ -208,6 +217,7 @@
     "schedule": "周一至周五，工作时间",
     "whatsapp": "发送WhatsApp",
     "instagram": "Instagram",
+    "2gis": "在2ГИС上打开",
     "form": {
       "name": "您的姓名",
       "phone": "电话",

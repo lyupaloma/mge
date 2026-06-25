@@ -106,6 +106,9 @@ export function CertificatesSection() {
       </div>
 
       {/* Лайтбокс на весь экран */}
+      <style>{`
+        .yarl__root { --yarl-color-backdrop: rgba(7, 13, 26, 0.95); }
+      `}</style>
       <Lightbox
         open={index >= 0}
         close={() => setIndex(-1)}
@@ -114,7 +117,6 @@ export function CertificatesSection() {
         plugins={[Captions, Zoom]}
         captions={{ descriptionTextAlign: "center" }}
         zoom={{ maxZoomPixelRatio: 3 }}
-        styles={{ container: { backgroundColor: "rgba(7, 13, 26, 0.95)" } }}
       />
     </section>
   );

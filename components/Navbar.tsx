@@ -155,7 +155,7 @@ export function Navbar() {
 
                   {/* WhatsApp */}
                   <a
-                    href="https://wa.me/77755151900"
+                    href="https://wa.me/77755151900?text=Здравствуйте! Пишу с сайта mgedna.kz"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-bg-base transition-colors duration-150"
