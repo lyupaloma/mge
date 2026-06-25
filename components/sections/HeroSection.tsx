@@ -25,11 +25,6 @@ const ICON_MAP: Record<string, React.ReactNode> = {
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.955 11.955 0 003 10.5a9 9 0 006 8.52 9 9 0 006-8.52 11.955 11.955 0 00-.598-3.786m0 0A12.007 12.007 0 0112 3c.38 0 .756.02 1.127.06M12 3v.75" />
     </svg>
   ),
-  gavel: (
-    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-    </svg>
-  ),
   lock: (
     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
       <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
@@ -48,7 +43,12 @@ const ICON_MAP: Record<string, React.ReactNode> = {
   ),
   calendar: (
     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0121 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+    </svg>
+  ),
+  building: (
+    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25m0 0a3 3 0 110-6m0 6a3 3 0 110-6m3.97-3.97a3.009 3.009 0 00-5.94 0M9 6.75v6m3-3v6m3-6v6m2.25-12H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3z" />
     </svg>
   ),
 };
@@ -146,17 +146,17 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="flex justify-center lg:justify-end"
           >
-            <div className="w-full max-w-md rounded-3xl border border-white/10 bg-[#070D1A]/55 backdrop-blur-[2px] p-6 shadow-[0_8px_40px_rgba(0,0,0,0.4)]">
+            <div className="w-full max-w-2xl rounded-3xl border border-white/10 bg-[#070D1A]/55 backdrop-blur-[2px] p-8 shadow-[0_8px_40px_rgba(0,0,0,0.4)] flex flex-col lg:flex-row gap-8 lg:items-stretch">
 
-              {/* DNA — стоит на паузе, запускается при наведении на плашку */}
-              <div className="dna-hover flex justify-center mb-5">
+              {/* DNA — слева, отцентрирована в своей зоне, растягивается по высоте */}
+              <div className="dna-hover flex justify-center flex-shrink-0 w-24">
                 <DnaHelix />
               </div>
 
-              {/* Сетка фишек 2 колонки */}
-              <ul className="grid grid-cols-2 gap-3">
+              {/* Преимущества — одна вертикальная колонка, задаёт высоту блока */}
+              <ul className="flex flex-col justify-between gap-3.5 flex-1">
                 {chips.map((chip) => (
-                  <li key={chip.label} className="flex items-center gap-2.5">
+                  <li key={chip.label} className="flex items-center gap-3">
                     <span className="w-8 h-8 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center text-gold flex-shrink-0">
                       {ICON_MAP[chip.icon]}
                     </span>

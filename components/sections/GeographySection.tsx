@@ -96,7 +96,7 @@ export function GeographySection() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { value: "14+",    label: t("statCities") },
-                { value: "8+",     label: t("statYears") },
+                { value: "10+",    label: t("statYears") },
                 { value: "24/7",   label: t("statSupport") },
                 { value: "1 день", label: t("statResult") },
               ].map((s) => (

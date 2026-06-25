@@ -24,9 +24,9 @@
       { "icon": "shield",   "label": "哈萨克斯坦卫生部许可" },
       { "icon": "target",   "label": "准确率99.9999%" },
       { "icon": "clock",    "label": "1天出结果" },
-      { "icon": "gavel",    "label": "哈萨克斯坦法院采信" },
       { "icon": "lock",     "label": "完全保密" },
       { "icon": "car",      "label": "上门服务" },
+      { "icon": "building", "label": "自有实验室" },
       { "icon": "globe",    "label": "ESWG及RCSME认证" },
       { "icon": "pin",      "label": "覆盖全哈萨克斯坦" },
       { "icon": "calendar", "label": "2016年起" }

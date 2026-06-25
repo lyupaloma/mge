@@ -74,7 +74,9 @@
   flex-direction: column;
   justify-content: space-between;
   width: 64px;
-  height: 168px;
+  /* Растягивается на высоту родителя (списка преимуществ), но не ниже min */
+  height: 100%;
+  min-height: 320px;
   perspective: 900px;
   flex-shrink: 0;
 }
