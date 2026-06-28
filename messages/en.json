@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "MGE DNA — Genetic Laboratory in Almaty. Results in 1 Day",
-    "description": "DNA paternity and ancestry tests in Almaty: paternity, maternity, forensic expertise. Results from 1 day. Home visits. Licensed laboratory.",
+    "description": "DNA paternity and ancestry tests in Almaty: paternity, maternity, forensic expertise. Results from 1 day. Home visits. Accredited laboratory.",
     "keywords": "DNA test Almaty, paternity test, genetic expertise Kazakhstan, DNA laboratory"
   },
   "nav": {
@@ -14,7 +14,7 @@
     "bookCta": "Book Now"
   },
   "hero": {
-    "badge": "Licensed Laboratory · Almaty",
+    "badge": "Accredited Laboratory · Almaty",
     "title": "Genetic Laboratory",
     "titleAccent": "Results in 1 Day",
     "subtitle": "DNA kinship tests: paternity, maternity, forensic expertise. Clear, confidential, with home visits.",
@@ -114,7 +114,7 @@
   "why": {
     "heading": "Why Choose MGE DNA",
     "items": [
-      { "icon": "shield",  "title": "Licensed Laboratory",    "text": "MOH RK license, ESWG and RCSME (Moscow) international certifications." },
+      { "icon": "shield",  "title": "Accredited Laboratory",    "text": "MOH RK license, ESWG and RCSME (Moscow) international certifications." },
       { "icon": "clock",   "title": "Results in 1 Day",        "text": "Express analysis — a unique service unavailable at most Almaty labs." },
       { "icon": "car",     "title": "We Come to You",          "text": "A specialist comes to a convenient location. No need to travel." },
       { "icon": "lock",    "title": "Full Confidentiality",    "text": "Your data is protected. Only you receive the result." },
@@ -264,7 +264,7 @@
   },
   "footer": {
     "rights": "© 2026 MGE DNA. All rights reserved.",
-    "license": "Licensed Laboratory",
+    "license": "Accredited Laboratory",
     "developedBy": "Website developed by"
   }
 }

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <!-- Background -->
+  <rect width="180" height="180" fill="#070D1A"/>
+
+  <!-- Double helix DNA -->
+  <g stroke="#C8A96E" stroke-width="3" fill="none" stroke-linecap="round">
+    <!-- Left helix -->
+    <path d="M 45 30 Q 55 50, 45 70 Q 35 90, 45 110 Q 55 130, 45 150"/>
+    <!-- Right helix -->
+    <path d="M 135 30 Q 125 50, 135 70 Q 145 90, 135 110 Q 125 130, 135 150"/>
+
+    <!-- Connecting rungs -->
+    <line x1="45" y1="40" x2="135" y2="40"/>
+    <line x1="45" y1="60" x2="135" y2="60"/>
+    <line x1="45" y1="80" x2="135" y2="80"/>
+    <line x1="45" y1="100" x2="135" y2="100"/>
+    <line x1="45" y1="120" x2="135" y2="120"/>
+    <line x1="45" y1="140" x2="135" y2="140"/>
+  </g>
+
+  <!-- Nodes -->
+  <circle cx="45" cy="40" r="4" fill="#C8A96E"/>
+  <circle cx="135" cy="40" r="4" fill="#C8A96E"/>
+  <circle cx="45" cy="80" r="4" fill="#3B82F6"/>
+  <circle cx="135" cy="80" r="4" fill="#3B82F6"/>
+  <circle cx="45" cy="120" r="4" fill="#C8A96E"/>
+  <circle cx="135" cy="120" r="4" fill="#C8A96E"/>
+</svg>
