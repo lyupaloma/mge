@@ -10,9 +10,11 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@types/nodemailer": "^8.0.1",
     "motion": "^11.15.0",
     "next": "^16.2.9",
     "next-intl": "^4.13.0",
+    "nodemailer": "^9.0.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "yet-another-react-lightbox": "^3.21.7"

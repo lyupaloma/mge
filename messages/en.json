@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "title": "MGE DNA — Genetic Laboratory in Almaty. Results in 1 Day",
+    "description": "DNA paternity and ancestry tests in Almaty: paternity, maternity, forensic expertise. Results from 1 day. Home visits. Licensed laboratory.",
+    "keywords": "DNA test Almaty, paternity test, genetic expertise Kazakhstan, DNA laboratory"
+  },
+  "nav": {
+    "services": "Services",
+    "howItWorks": "How It Works",
+    "prices": "Pricing",
+    "certificates": "Certificates",
+    "reviews": "Reviews",
+    "contacts": "Contacts",
+    "bookCta": "Book Now"
+  },
+  "hero": {
+    "badge": "Licensed Laboratory · Almaty",
+    "title": "Genetic Laboratory",
+    "titleAccent": "Results in 1 Day",
+    "subtitle": "DNA kinship tests: paternity, maternity, forensic expertise. Clear, confidential, with home visits.",
+    "ctaPrimary": "Book a Test",
+    "ctaSecondary": "Get a Quote",
+    "chips": [
+      { "icon": "shield",   "label": "MOH RK Licensed" },
+      { "icon": "target",   "label": "99.9999% Accuracy" },
+      { "icon": "clock",    "label": "Results in 1 Day" },
+      { "icon": "lock",     "label": "Full Confidentiality" },
+      { "icon": "car",      "label": "Home Visits" },
+      { "icon": "globe",    "label": "ESWG & RCSME Certified" },
+      { "icon": "pin",      "label": "All Kazakhstan" },
+      { "icon": "calendar", "label": "Est. 2016" }
+    ]
+  },
+  "stats": [
+    { "value": "99.9999%", "label": "analysis accuracy" },
+    { "value": "Since 2014", "label": "on the market" },
+    { "value": "Mobile",   "label": "across Almaty & Kazakhstan" },
+    { "value": "From 1 day", "label": "result turnaround" }
+  ],
+  "services": {
+    "heading": "Our Services",
+    "subheading": "Genetic testing for any complexity",
+    "items": [
+      {
+        "icon": "dna",
+        "title": "Paternity Testing",
+        "description": "Informational analysis for personal use. Accuracy 99.9999%. Results from 1 day.",
+        "price": "from 70 000 ₸",
+        "badge": "Popular"
+      },
+      {
+        "icon": "gavel",
+        "title": "Forensic Expertise",
+        "description": "Official expert conclusion accepted by RK courts. Compliant with all CPC RK requirements.",
+        "price": "from 70 000 ₸",
+        "badge": null
+      },
+      {
+        "icon": "car",
+        "title": "Home Visits",
+        "description": "A specialist will come to you — at home, office, or any convenient location. Across Almaty.",
+        "price": "On request",
+        "badge": "Unique"
+      },
+      {
+        "icon": "mars",
+        "title": "Y-DNA (Paternal Line)",
+        "description": "Establish kinship through the male line: grandfather, son, brother, uncle.",
+        "price": "On request",
+        "badge": null
+      },
+      {
+        "icon": "venus",
+        "title": "X-DNA Kinship",
+        "description": "Establish kinship through grandmother or female line.",
+        "price": "On request",
+        "badge": null
+      },
+      {
+        "icon": "people",
+        "title": "Half-Sisters",
+        "description": "Test for kinship between sisters through the X chromosome.",
+        "price": "On request",
+        "badge": null
+      }
+    ]
+  },
+  "howItWorks": {
+    "heading": "How It Works",
+    "subheading": "4 simple steps from booking to results",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Book",
+        "description": "Call, write on WhatsApp, or fill in the form. We'll respond within 15 minutes."
+      },
+      {
+        "number": "02",
+        "title": "Sample Collection",
+        "description": "Visit our laboratory or order a home visit — we come to you."
+      },
+      {
+        "number": "03",
+        "title": "Lab Analysis",
+        "description": "Samples undergo molecular genetic analysis on certified equipment."
+      },
+      {
+        "number": "04",
+        "title": "Receive Results",
+        "description": "You receive an official Expert Report. Standard — 5 days, express — 1 day."
+      }
+    ]
+  },
+  "why": {
+    "heading": "Why Choose MGE DNA",
+    "items": [
+      { "icon": "shield",  "title": "Licensed Laboratory",    "text": "MOH RK license, ESWG and RCSME (Moscow) international certifications." },
+      { "icon": "clock",   "title": "Results in 1 Day",        "text": "Express analysis — a unique service unavailable at most Almaty labs." },
+      { "icon": "car",     "title": "We Come to You",          "text": "A specialist comes to a convenient location. No need to travel." },
+      { "icon": "lock",    "title": "Full Confidentiality",    "text": "Your data is protected. Only you receive the result." },
+      { "icon": "users",   "title": "Experienced Experts",     "text": "Certified specialists with international training." },
+      { "icon": "check",   "title": "99.9999% Accuracy",       "text": "We apply DNA analysis standards accepted in international forensic practice." }
+    ]
+  },
+  "pricing": {
+    "heading": "Choose Your Speed",
+    "subheading": "All plans include an official Expert Report and 99.9999% accuracy",
+    "comparison": "We deliver results in 1 day while competitors wait 5–30 days to ship samples to other cities.",
+    "popularBadge": "Best",
+    "ctaLabel": "Get Exact Price",
+    "tiers": [
+      {
+        "name": "Standard",
+        "duration": "5 days",
+        "description": "The optimal choice when deadlines are not urgent. Full molecular genetic analysis in our lab."
+      },
+      {
+        "name": "Fast",
+        "duration": "3 days",
+        "description": "Accelerated processing for those who need results sooner — no express surcharge."
+      },
+      {
+        "name": "Express",
+        "duration": "1 day",
+        "description": "Results tomorrow. Possible thanks to our in-house lab — we don't depend on delivery to other cities.",
+        "popular": true
+      }
+    ],
+    "whyUs": {
+      "heading": "Why We're Faster",
+      "items": [
+        { "icon": "building", "title": "Laboratory", "text": "MGE specialists conduct research at our genetic laboratory in Almaty. Results without delays — in 1 day." },
+        { "icon": "bolt",     "title": "No Intermediaries",    "text": "No 5–30 day delivery wait to Astana or abroad. Everything is in Almaty." },
+        { "icon": "check",    "title": "Accuracy Guarantee",   "text": "99.9999% on positive results. Standards accepted in international forensic practice." }
+      ]
+    },
+    "note": "Exact pricing is calculated individually — it depends on the number of participants and test type. Leave a request or call us, we'll reply within 15 minutes."
+  },
+  "certificates": {
+    "heading": "Licenses & Certificates",
+    "subheading": "International accreditation and state licenses"
+  },
+  "reviews": {
+    "heading": "Client Reviews",
+    "subheading": "4.5 ★ based on 2GIS reviews",
+    "items": [
+      {
+        "name": "Aliya M.",
+        "rating": 5,
+        "text": "Very attentive to clients, explained everything clearly. Knowledgeable and caring doctors."
+      },
+      {
+        "name": "Serik B.",
+        "rating": 5,
+        "text": "Great experience, very accurate results. Received on time, no delays."
+      },
+      {
+        "name": "Damira K.",
+        "rating": 5,
+        "text": "Excellent staff, friendly atmosphere. Highly recommend this laboratory."
+      },
+      {
+        "name": "Zhanna R.",
+        "rating": 5,
+        "text": "Many thanks! Excellent laboratory. Fast, professional, and clearly explained everything."
+      }
+    ]
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "When and how will I receive the results?",
+        "answer": "Informational analysis: 1 to 5 business days depending on plan (Standard/Fast/Express). Results are provided as an Expert Report. Forensic expertise: 5–10 business days, submitted to court."
+      },
+      {
+        "question": "Can the test be done without the second party's knowledge?",
+        "answer": "Informational analysis can be done with any samples (hair, saliva, etc.). Forensic expertise requires official consent of all parties or a court order."
+      },
+      {
+        "question": "How does a home visit work?",
+        "answer": "You book, agree on a time and address. The specialist arrives with all necessary equipment and collects samples in 10–15 minutes."
+      },
+      {
+        "question": "What is the accuracy of the analysis?",
+        "answer": "Paternity accuracy is 99.9999% for a positive result. For a negative result — exclusion is 100%."
+      },
+      {
+        "question": "Who pays for the forensic expertise?",
+        "answer": "According to Art. 110, Para. 4 of the CPC RK: the party who filed the motion pays. If both parties filed — costs are split equally."
+      },
+      {
+        "question": "Is my data confidential?",
+        "answer": "Yes. Results are issued only to the client. We do not share personal data with third parties."
+      }
+    ]
+  },
+  "contacts": {
+    "heading": "Contact Us",
+    "subheading": "We respond within 15 minutes",
+    "phone": "+7 775 515 19 00",
+    "email": "info@mgedna.kz",
+    "address": "Almaty, Nauryzbay Batyr St., 65\nEdition 65 BC, 1st Floor, Office 102",
+    "schedule": "Mon–Fri, business hours",
+    "whatsapp": "Write on WhatsApp",
+    "instagram": "Instagram",
+    "2gis": "Open in 2GIS",
+    "form": {
+      "name": "Your name",
+      "phone": "Phone",
+      "message": "Message (optional)",
+      "submit": "Send Request",
+      "success": "Thank you! We will contact you shortly.",
+      "error": "Something went wrong. Please call us."
+    }
+  },
+  "media": {
+    "heading": "Our Experts in the Media",
+    "subheading": "Watch interviews and reports featuring MGE DNA specialists"
+  },
+  "instruction": {
+    "heading": "How to Submit DNA Samples",
+    "subheading": "Simple sample collection guide — 5 steps",
+    "downloadCta": "Download DNA Collection Guide",
+    "steps": [
+      { "title": "Book", "description": "Call or write to us — we'll arrange a convenient time and format (lab visit or home visit)." },
+      { "title": "Get a Kit", "description": "We'll provide sterile swabs and instructions. For home visits, the specialist brings everything." },
+      { "title": "Take a Swab", "description": "Gently swab the inner cheek 10–15 times. Do not eat for 1 hour before collection." },
+      { "title": "Pack the Sample", "description": "Let the swab dry 5–10 minutes, place in envelope or kit bag. Label with participant's name." },
+      { "title": "Deliver to Lab", "description": "Bring in person, send by courier, or leave with the specialist during a home visit. Results from 1 day." }
+    ]
+  },
+  "geography": {
+    "heading": "MGE DNA in Every Region of Kazakhstan",
+    "subheading": "Our sample collection points are located in all major cities across the country",
+    "description": "No need to travel to the capital — just contact us and we'll direct you to the nearest lab in your city. We operate across Kazakhstan: from Atyrau to Ust-Kamenogorsk.",
+    "cta": "Find a Lab in My City",
+    "statCities": "cities",
+    "statYears": "years on market",
+    "statSupport": "consultations",
+    "statResult": "express results",
+    "legendMain": "Main Laboratory (Almaty)",
+    "legendCity": "Collection Point"
+  },
+  "footer": {
+    "rights": "© 2026 MGE DNA. All rights reserved.",
+    "license": "Licensed Laboratory",
+    "developedBy": "Website developed by"
+  }
+}

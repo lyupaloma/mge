@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import "@/app/globals.css";
 
 const inter = Inter({
@@ -79,6 +80,7 @@ export default async function LocaleLayout({
       <body className="text-text-primary antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
+          <ScrollToTop />
         </NextIntlClientProvider>
       </body>
     </html>

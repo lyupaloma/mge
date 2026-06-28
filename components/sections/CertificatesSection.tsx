@@ -19,12 +19,12 @@ type Cert = {
 
 const DIR = "/images/licenses";
 
-// Сначала лицензии (главное доверие), затем сертификаты, затем письма/грамоты.
+// Сыздыкбекова первой, затем Кириятова, затем сертификаты, затем письма/грамоты.
 const CERTS: Cert[] = [
-  { image: `${DIR}/license-kiriyatova-1.jpg`,   label: "Лицензия Кириятовой Т.Г." },
-  { image: `${DIR}/license-kiriyatova-2.jpg`,   label: "Приложение к лицензии (Кириятова Т.Г.)" },
   { image: `${DIR}/license-syzdykbekova-1.jpg`, label: "Лицензия Сыздыкбековой А.С." },
   { image: `${DIR}/license-syzdykbekova-2.jpg`, label: "Приложение к лицензии (Сыздыкбекова А.С.)" },
+  { image: `${DIR}/license-kiriyatova-1.jpg`,   label: "Лицензия Кириятовой Т.Г." },
+  { image: `${DIR}/license-kiriyatova-2.jpg`,   label: "Приложение к лицензии (Кириятова Т.Г.)" },
   { image: `${DIR}/cert-eswg.jpg`,              label: "Сертификат ESWG" },
   { image: `${DIR}/cert-genetic-expertise.jpg`, label: "Сертификат Genetic Expertise" },
   { image: `${DIR}/cert-lt.jpg`,                label: "Сертификат LT" },
@@ -39,7 +39,8 @@ const CERTS: Cert[] = [
 
 export function CertificatesSection() {
   const t = useTranslations("certificates");
-  const [index, setIndex] = useState(-1); // -1 = закрыт
+  const [index, setIndex] = useState(-1);
+  const [expanded, setExpanded] = useState(false);
 
   const slides = CERTS.map((c) => ({ src: c.image, title: c.label }));
 
@@ -67,7 +68,7 @@ export function CertificatesSection() {
               transition={{ duration: 0.4, delay: i * 0.04 }}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
               aria-label={`Открыть: ${cert.label}`}
-              className="group relative aspect-[3/4] rounded-xl bg-bg-card border border-bg-border hover:border-gold/30 overflow-hidden flex flex-col text-left transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/50"
+              className={`group relative aspect-[3/4] rounded-xl bg-bg-card border border-bg-border hover:border-gold/30 overflow-hidden flex flex-col text-left transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/50 ${!expanded && i > 1 ? "hidden sm:flex" : ""}`}
             >
               {/* Превью документа */}
               <div className="relative flex-1 overflow-hidden">
@@ -102,6 +103,23 @@ export function CertificatesSection() {
               </div>
             </motion.button>
           ))}
+        </div>
+
+        {/* Кнопка "Показать все" — только на мобильном */}
+        <div className="sm:hidden mt-6 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setExpanded(!expanded)}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-gold/30 bg-gold/5 text-gold text-sm font-medium hover:bg-gold/10 transition-all duration-200"
+          >
+            {expanded ? "Свернуть" : `Показать все (${CERTS.length})`}
+            <svg
+              className={`w-4 h-4 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
         </div>
       </div>
 

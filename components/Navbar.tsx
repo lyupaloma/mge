@@ -10,6 +10,7 @@ const LOCALE_LABELS: Record<string, string> = {
   ru: "РУС",
   kz: "ҚАЗ",
   zh: "中文",
+  en: "ENG",
 };
 
 export function Navbar() {

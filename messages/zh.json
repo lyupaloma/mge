@@ -17,7 +17,7 @@
     "badge": "持牌实验室 · 阿拉木图",
     "title": "基因实验室",
     "titleAccent": "结果 — 1天内",
-    "subtitle": "DNA亲缘关系鉴定：亲子鉴定、司法鉴定。清晰、保密、提供上门服务。",
+    "subtitle": "DNA亲缘关系鉴定：亲子鉴定、母亲鉴定、司法鉴定。清晰、保密、提供上门服务。",
     "ctaPrimary": "预约检测",
     "ctaSecondary": "了解费用",
     "chips": [
@@ -26,7 +26,6 @@
       { "icon": "clock",    "label": "1天出结果" },
       { "icon": "lock",     "label": "完全保密" },
       { "icon": "car",      "label": "上门服务" },
-      { "icon": "building", "label": "自有实验室" },
       { "icon": "globe",    "label": "ESWG及RCSME认证" },
       { "icon": "pin",      "label": "覆盖全哈萨克斯坦" },
       { "icon": "calendar", "label": "2016年起" }
@@ -150,7 +149,7 @@
     "whyUs": {
       "heading": "为什么我们更快",
       "items": [
-        { "icon": "building", "title": "自有实验室", "text": "检测在我们这里完成，不外包。因此结果1天即可。" },
+        { "icon": "building", "title": "实验室", "text": "MGE专家在阿拉木图遗传实验室进行研究。无延迟结果——1天内。" },
         { "icon": "bolt",     "title": "无中间环节", "text": "无需等待5-30天将样本运送到阿斯塔纳或国外。一切就在阿拉木图。" },
         { "icon": "check",    "title": "准确性保证", "text": "阳性结果准确率99.9999%。采用国际司法实践标准。" }
       ]
@@ -213,7 +212,7 @@
     "subheading": "15分钟内回复",
     "phone": "+7 775 515 19 00",
     "email": "info@mgedna.kz",
-    "address": "阿拉木图市",
+    "address": "阿拉木图市，瑙雷兹拜巴特拉街，65号\nEdition 65商务中心，1楼，102室",
     "schedule": "周一至周五，工作时间",
     "whatsapp": "发送WhatsApp",
     "instagram": "Instagram",

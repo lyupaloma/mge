@@ -81,6 +81,9 @@ function LocalVideoCard({ src, title }: { src: string; title: string }) {
 
 export function MediaSection() {
   const t = useTranslations("media");
+  const [expanded, setExpanded] = useState(false);
+  const allVideos = [...YOUTUBE_VIDEOS.map(v => ({ type: "yt" as const, ...v })), { type: "local" as const, id: "local", title: LOCAL_VIDEO.title, src: LOCAL_VIDEO.src }];
+  const total = allVideos.length;
 
   return (
     <section id="media" className="py-20 lg:py-32 bg-bg-base">
@@ -95,25 +98,38 @@ export function MediaSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {YOUTUBE_VIDEOS.map((v, i) => (
+          {allVideos.map((v, i) => (
             <motion.div
               key={v.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
+              className={!expanded && i > 0 ? "hidden sm:block" : ""}
             >
-              <YtCard videoId={v.id} title={v.title} />
+              {v.type === "yt"
+                ? <YtCard videoId={v.id} title={v.title} />
+                : <LocalVideoCard src={(v as { src: string }).src} title={v.title} />
+              }
             </motion.div>
           ))}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 5 * 0.08 }}
+        </div>
+
+        {/* Кнопка "Показать все" — только на мобильном */}
+        <div className="sm:hidden mt-6 flex justify-center">
+          <button
+            type="button"
+            onClick={() => setExpanded(!expanded)}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-gold/30 bg-gold/5 text-gold text-sm font-medium hover:bg-gold/10 transition-all duration-200"
           >
-            <LocalVideoCard src={LOCAL_VIDEO.src} title={LOCAL_VIDEO.title} />
-          </motion.div>
+            {expanded ? "Свернуть" : `Показать все видео (${total})`}
+            <svg
+              className={`w-4 h-4 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>

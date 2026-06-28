@@ -51,13 +51,13 @@ export function ContactSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
 
-          {/* Contact info */}
+          {/* Contact info — левая колонка */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col gap-6"
+            className="flex flex-col gap-4"
           >
             <ContactItem
               icon={<PhoneIcon />}
@@ -78,33 +78,34 @@ export function ContactSection() {
               label={t("schedule")}
             />
 
+            {/* Social buttons — под контактной информацией */}
             <div className="flex flex-wrap gap-3 mt-2">
               <a
                 href="https://wa.me/77755151900?text=Здравствуйте! Пишу с сайта mgedna.kz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-3 rounded-xl border border-bg-border bg-bg-card hover:border-green-500/40 hover:text-green-400 text-text-secondary text-sm font-medium transition-all duration-200"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg border border-bg-border bg-bg-card hover:border-green-500/40 hover:text-green-400 text-text-secondary text-xs sm:text-sm font-medium transition-all duration-200"
               >
                 <WhatsAppIcon />
-                {t("whatsapp")}
+                <span className="hidden sm:inline">{t("whatsapp")}</span>
               </a>
               <a
                 href="https://www.instagram.com/mge_dna.kz/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-3 rounded-xl border border-bg-border bg-bg-card hover:border-pink-500/40 hover:text-pink-400 text-text-secondary text-sm font-medium transition-all duration-200"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg border border-bg-border bg-bg-card hover:border-pink-500/40 hover:text-pink-400 text-text-secondary text-xs sm:text-sm font-medium transition-all duration-200"
               >
                 <InstagramIcon />
-                {t("instagram")}
+                <span className="hidden sm:inline">{t("instagram")}</span>
               </a>
               <a
                 href="https://2gis.kz/almaty/firm/70000001111736257"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-3 rounded-xl border border-bg-border bg-bg-card hover:border-gold/40 hover:text-gold text-text-secondary text-sm font-medium transition-all duration-200"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg border border-bg-border bg-bg-card hover:border-gold/40 hover:text-gold text-text-secondary text-xs sm:text-sm font-medium transition-all duration-200"
               >
                 <PinIcon />
-                {t("2gis")}
+                <span className="hidden sm:inline">{t("2gis")}</span>
               </a>
             </div>
           </motion.div>
@@ -118,7 +119,7 @@ export function ContactSection() {
           >
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col gap-5 p-8 rounded-2xl bg-bg-card border border-bg-border"
+              className="flex flex-col gap-3 p-6 rounded-2xl bg-bg-card border border-bg-border"
             >
               <div>
                 <label className="block text-text-secondary text-sm mb-2">{f("name")}</label>
@@ -147,7 +148,7 @@ export function ContactSection() {
                 <textarea
                   name="message"
                   rows={3}
-                  className="w-full px-4 py-3 rounded-xl bg-bg-base border border-bg-border text-text-primary text-sm placeholder-text-muted focus:outline-none focus:border-gold/40 transition-colors duration-200 resize-none"
+                  className="w-full px-4 py-2 rounded-lg bg-bg-base border border-bg-border text-text-primary text-sm placeholder-text-muted focus:outline-none focus:border-gold/40 transition-colors duration-200 resize-none"
                   placeholder={f("message")}
                 />
               </div>
@@ -177,8 +178,8 @@ export function ContactSection() {
 function ContactItem({ icon, label, href }: { icon: React.ReactNode; label: string; href?: string }) {
   const inner = (
     <div className="flex items-center gap-4 p-4 rounded-xl bg-bg-card border border-bg-border hover:border-gold/20 transition-colors duration-200">
-      <span className="text-gold">{icon}</span>
-      <span className="text-text-primary text-sm font-medium">{label}</span>
+      <span className="text-gold flex-shrink-0">{icon}</span>
+      <div className="text-text-primary text-sm font-medium whitespace-pre-line">{label}</div>
     </div>
   );
   return href ? <a href={href}>{inner}</a> : <div>{inner}</div>;

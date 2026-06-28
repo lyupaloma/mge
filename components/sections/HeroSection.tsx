@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
@@ -82,7 +82,7 @@ export function HeroSection() {
       {/* Лёгкий синий accent-glow */}
       <div className="absolute inset-0 bg-radial-blue pointer-events-none" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 lg:py-24">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-10 lg:py-16">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
           {/* Левая колонка — заголовок и CTA */}
@@ -94,7 +94,7 @@ export function HeroSection() {
           >
             {/* Badge */}
             <motion.div variants={itemVariants}>
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold/30 bg-gold/5 text-gold text-xs font-medium tracking-widest uppercase mb-8">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold/30 bg-gold/5 text-gold text-xs font-medium tracking-widest uppercase mb-5">
                 <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
                 {t("badge")}
               </span>
@@ -103,13 +103,13 @@ export function HeroSection() {
             {/* Heading */}
             <motion.h1
               variants={itemVariants}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tighter text-text-primary mb-4"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tighter text-text-primary mb-3"
             >
               {t("title")}
             </motion.h1>
 
             <motion.div variants={itemVariants}>
-              <p className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-gradient-gold mb-8">
+              <p className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-gradient-gold mb-5">
                 {t("titleAccent")}
               </p>
             </motion.div>
@@ -117,7 +117,7 @@ export function HeroSection() {
             {/* Subtitle */}
             <motion.p
               variants={itemVariants}
-              className="text-text-secondary text-lg leading-relaxed mb-10 max-w-lg"
+              className="text-text-secondary text-base leading-relaxed mb-7 max-w-lg"
             >
               {t("subtitle")}
             </motion.p>
@@ -146,7 +146,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="flex justify-center lg:justify-end"
           >
-            <div className="w-full max-w-2xl rounded-3xl border border-white/10 bg-[#070D1A]/55 backdrop-blur-[2px] p-8 shadow-[0_8px_40px_rgba(0,0,0,0.4)] flex flex-col lg:flex-row gap-8 lg:items-stretch">
+            <div className="w-full max-w-2xl rounded-3xl border border-white/10 bg-[#070D1A]/55 backdrop-blur-[2px] p-6 lg:p-8 shadow-[0_8px_40px_rgba(0,0,0,0.4)] flex flex-row gap-5 lg:gap-8 items-stretch">
 
               {/* DNA — слева, отцентрирована в своей зоне, растягивается по высоте */}
               <div className="dna-hover flex justify-center flex-shrink-0 w-24">
